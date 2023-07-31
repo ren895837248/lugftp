@@ -2,7 +2,7 @@ FROM smartentry/debian:10-0.4.4
 
 RUN rm -rf /etc/apt/sources.list
 
-ADD .sources.list /etc/apt/
+COPY sources.list /etc/apt/
 
 MAINTAINER Yifan Gao <docker@yfgao.com>
 
